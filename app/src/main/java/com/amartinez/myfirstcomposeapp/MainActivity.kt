@@ -18,6 +18,7 @@ import com.amartinez.myfirstcomposeapp.components.MyNetworkImage
 import com.amartinez.myfirstcomposeapp.components.Progress
 import com.amartinez.myfirstcomposeapp.components.ProgressAdvance
 import com.amartinez.myfirstcomposeapp.components.ProgressAdvance2
+import com.amartinez.myfirstcomposeapp.components.ProgressAnimarion
 import com.amartinez.myfirstcomposeapp.login.Greeting
 import com.amartinez.myfirstcomposeapp.ui.theme.MyFirstComposeAppTheme
 
@@ -28,7 +29,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyFirstComposeAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    ProgressAdvance2(modifier = Modifier.padding(innerPadding))
+                    ProgressAnimarion(modifier = Modifier.padding(innerPadding))
 
                 }
             }

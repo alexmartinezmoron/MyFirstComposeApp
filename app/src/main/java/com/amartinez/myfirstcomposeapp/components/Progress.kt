@@ -20,6 +20,12 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.airbnb.lottie.LottieComposition
+import com.airbnb.lottie.compose.LottieAnimation
+import com.airbnb.lottie.compose.LottieCompositionSpec
+import com.airbnb.lottie.compose.LottieConstants
+import com.airbnb.lottie.compose.rememberLottieComposition
+import com.amartinez.myfirstcomposeapp.R
 
 @Composable
 fun Progress(modifier: Modifier = Modifier) {
@@ -77,6 +83,22 @@ fun ProgressAdvance2(modifier: Modifier = Modifier) {
 
 
         }
+    }
+}
+
+@Composable
+fun ProgressAnimarion(modifier: Modifier = Modifier) {
+
+    val composition: LottieComposition?
+    by rememberLottieComposition(LottieCompositionSpec.RawRes(R.raw.progress1))
+
+    Column(modifier = modifier
+        .padding(16.dp)
+        .fillMaxSize(),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+       LottieAnimation(composition = composition, iterations = LottieConstants.IterateForever)
     }
 }
 
