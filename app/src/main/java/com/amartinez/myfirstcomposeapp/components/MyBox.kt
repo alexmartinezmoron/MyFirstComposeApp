@@ -1,4 +1,4 @@
-package com.amartinez.myfirstcomposeapp.components.layout
+package com.amartinez.myfirstcomposeapp.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
